@@ -13,13 +13,12 @@ a {
     text-decoration: none;
 }
 header {
-    position: relative;
-    padding: 5px;
+    width: 100%;
     padding-top: 20px;
-    padding-left: 30px;
     padding-bottom: 20px;
     background: rgb(255, 255, 255);
     font-size: 20px;
+    overflow: hidden;
 }
 header div{
     display: inline-block;
@@ -35,6 +34,7 @@ header .navbar-home{
     position: relative;
     margin-left: 20px;
     font-size: 22px;
+    margin-left: 75px;
 }
 header .logo {
     margin-left: 15px;
@@ -42,18 +42,17 @@ header .logo {
     height: 32px;
     vertical-align: middle;
 }
+header .navbar-right{
+    width: 500px;
+    float: right;
+    margin-right: 75px;
+    transform: translateY(5px);
+}
 header .navbar-menu{
-    position: absolute;
-    right: 300px;
     font-size: 18px;
-    top: 50%;
-    transform: translate(0, -50%);
 }
 header .navbar-login{
-    position: absolute;
-    right: 100px;
-    top: 50%;
-    transform: translate(0, -50%);
+    float: right;
 }
 header .log-button{
     border: solid;
