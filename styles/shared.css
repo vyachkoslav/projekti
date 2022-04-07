@@ -1,0 +1,67 @@
+html, body {
+    font-family: Arial;
+    margin: 0;
+    height: 100%;
+    background-color: rgb(7, 7, 7);
+    color: #1a1a1a;
+}
+ul {
+    list-style: none;
+}
+a {
+    color: #111111;
+    text-decoration: none;
+}
+header {
+    position: relative;
+    padding: 5px;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    background: rgb(255, 255, 255);
+    font-size: 20px;
+}
+header div{
+    display: inline-block;
+}
+header a:hover {
+    color: rgb(80, 80, 80);
+}
+header a + a {
+    padding-left: 15px;
+}
+
+header .navbar-home{
+    position: relative;
+    margin-left: 20px;
+    font-size: 22px;
+}
+header .logo {
+    margin-left: 15px;
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+}
+header .navbar-menu{
+    position: absolute;
+    right: 300px;
+    font-size: 18px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+header .navbar-login{
+    position: absolute;
+    right: 100px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+header .log-button{
+    border: solid;
+    border-color: #111111;
+    border-width: 1px 1px;
+    padding: 8px;
+}
+header .log-button:hover{
+    background-color: #f7f7f7;
+    color: #111111;
+}
