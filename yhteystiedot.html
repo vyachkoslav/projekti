@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,6 +5,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
 <style>
 body {font-family: "Times New Roman", Georgia, Serif;}
 h1, h2, h3, h4, h5, h6 {
@@ -20,13 +21,11 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
-.kartta{
+#map{
     left: 700px;
-    top: 50px;
+    top: -100px;
     position: relative;
-    background-color: lightgrey;
     width: 300px;
-    border: 15px solid black;
     padding: 50px;
     margin: 20px;
     height: 300px;
@@ -40,10 +39,11 @@ h1, h2, h3, h4, h5, h6 {
         <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
           <a href="#home" class="w3-bar-item w3-button">Ravintola</a>
           <div class="w3-right w3-hide-small">
-              <a href="projekti.etusivu.html" class="w3-bar-item w3-button">Menu</a>
-              <a href="projekti.varaukset.html" class="w3-bar-item w3-button">Varaukset</a>
-              <a href="projekti.yhteystiedot.html" class="w3-bar-item w3-button">Yhteystiedot</a>
-              <a href="projekti.sisäänkirjautuminen.html" class="w3-bar-item w3-button">Kirjaudu Sisään</a>
+            <a href="etusivu.html" class="w3-bar-item w3-button">Etusivu</a>
+            <a href="menu.html" class="w3-bar-item w3-button">Menu</a>
+            <a href="varaukset.html" class="w3-bar-item w3-button">Varaukset</a>
+            <a href="yhteystiedot.html" class="w3-bar-item w3-button">Yhteystiedot</a>
+            <a href="sisäänkirjautuminen.html" class="w3-bar-item w3-button">Kirjaudu Sisään</a>
           </div>
         </div>
       </div>
@@ -61,6 +61,14 @@ h1, h2, h3, h4, h5, h6 {
 </div>
 
 
-<div class ="kartta">    
+<div id="map">
+  <script>
+  var map = L.map('map').setView([60.4511, 22.2629], 14);
+
+  L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=bg8DJDWONRh6mlJGWYRf',{
+  attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>'
+  }).addTo(map);
+  var marker = L.marker([60.4511, 22.2629]).addTo(map);
+</script>    
 </div>
 </body>
