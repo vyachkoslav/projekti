@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Ravintola</title>
+<title>Menu</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -17,7 +17,7 @@ h1, h2, h3, h4, h5, h6 {
 
 <div class="w3-top">
   <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
-    <a href="#home" class="w3-bar-item w3-button">Ravintola</a>
+    <a href="etusivu.html" class="w3-bar-item w3-button">Ravintola</a>
     <div class="w3-right w3-hide-small">
       <a href="etusivu.html" class="w3-bar-item w3-button">Etusivu</a>
       <a href="menu.html" class="w3-bar-item w3-button">Menu</a>
@@ -28,77 +28,43 @@ h1, h2, h3, h4, h5, h6 {
   </div>
 </div>
 
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Float four columns side by side */
-.column {
-  float: left;
-  width: 25%;
-  padding: 0 10px;
-}
-
-/* Remove extra left and right margins, due to padding */
-.row {margin: 0 -5px;}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive columns */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-}
-
-/* Style the counter cards */
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 50px;
-  text-align: center;
-  background-color: #f1f1f1;
-}
-</style>
 </head>
 <body>
 
-<div class="row">
-  <div class="column">
-    <div class="card">
-      <h3>Nuudelisoppa</h3>
-      <img src="nuudelisoppa.jpg">
-      <p>14.4</p>
-    </div>
-  </div>
+  <div class="w3-row w3-padding-64" id="menu">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center">Menu</h1><br>
 
-  <div class="column">
-    <div class="card">
-      <h3>Ruska-ajan härkäpata</h3>
-      <img src="härkäpata.jpg">
-      <p>15.4</p>
+      <h4>Halloumisalaatti</h4>
+      <p class="w3-text-grey">Jääsalaattia, rucolaa, puolikuivattua kirsikkatomaattia, marinoitua punasipulia, keitettyä kananmunaa, perunasalaattia ja caesarkastiketta sekä halloumia 13,90€</p><br>
+
+      <h4>Kanapasta</h4>
+      <p class="w3-text-grey">Kanaa, pestoa ja pennepastaa kermaisessa kastikkeessa, Grana Padano -juustoa ja rucolaa 12,90€</p>
+
+      <h4>Kanasalaatti</h4>
+      <p class="w3-text-grey">Jääsalaattia, rucolaa, puolikuivattua kirsikkatomaattia, marinoitua punasipulia, keitettyä kananmunaa, perunasalaattia ja caesarkastiketta sekä rapeaa kanaa 13,90€</p><br>
+
+      <h4>Lehtipihvi</h4>
+      <p class="w3-text-grey">Ohueksi nuijittua naudan ulkofileetä ja pippurikastiketta 17,90€</p>
+
+      <h4>Lihapullat</h4>
+      <p class="w3-text-grey">Lihapullia, perunamuusia, kermakastiketta ja puolukkaa 10.90€</p><br>
+    
+      <h4>Metsästäjänleike</h4>
+      <p class="w3-text-grey">Leivitettyä viljaporsaan ulkofileetä ja sienikastiketta 14,90€</p><br>
+    
+      <h4>Pariloitua Kananrintaa ja Halloumijuustoa</h4>
+      <p class="w3-text-grey">Pariloitua kananrintaa, halloumijuustoa ja tsatsikia 14,90€</p><br>
+
+      <h4>Savulohisalaatti</h4>
+      <p class="w3-text-grey">Jääsalaattia, rucolaa, puolikuivattua kirsikkatomaattia, marinoitua punasipulia, keitettyä kananmunaa, perunasalaattia ja caesarkastiketta sekä savulohta 13,90€</p><br>
+    
+      <h4>Savustettua Kirjolohta</h4>
+      <p class="w3-text-grey">Lämminsavustettua kirjolohta ja tartarmajoneesia 15,90€</p><br>
+    
+      <h4>Wieninleike</h4>
+      <p class="w3-text-grey">Leivitettyä viljaporsaan ulkofileetä, sitruunaa, kaprista ja anjovista 13,90€</p>    
     </div>
-  </div>
-  
-  <div class="column">
-    <div class="card">
-      <h3>Spagetti italialaiseen tyyliin</h3>
-      <img src="spagetti.jpg">
-      <p>16.4</p>
-    </div>
-  </div>
-</div>
 
 </body>
 </html>
