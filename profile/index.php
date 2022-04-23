@@ -1,5 +1,5 @@
 <?php
-    include("connection.php");
+    include($_SERVER['DOCUMENT_ROOT']."/connection.php");
     session_start();
 
     $sql = mysqli_query($conn,
@@ -8,7 +8,7 @@
 
     if (!isset($_SESSION['username']) || empty($_SESSION['username'])) {
         session_unset(); 
-        header("location:login.php");
+        header("location:/login/");
     }
 
     echo $_SESSION['username'];
