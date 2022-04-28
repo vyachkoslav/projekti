@@ -16,14 +16,22 @@ h1, h2, h3, h4, h5, h6 {
 
 .osoite{
     left: 150px;
-    top: 100px;
-    position: relative;
+    top: 200px;
+    position: absolute;
 
+}
+
+
+
+.tarina{
+  left: 150px;
+  top: 500px;
+  position: absolute;
 }
 
 #map{
     left: 700px;
-    top: -100px;
+    top: 300px;
     position: relative;
     width: 300px;
     padding: 50px;
@@ -57,8 +65,16 @@ h1, h2, h3, h4, h5, h6 {
 <h3>katuosoite</h3>
 <h3>postinumero</h3>
 <h3>Kaupunki</h3>
-<p>puhelinnumero</p>
+<h3>puhelinnumero</h3>
 </div>
+
+
+<div class = "tarina">
+<p> Olemme vuodesta xxxx toiminut perheyritys. <br>Meidän arvoihimme kuuluvat: <br>sekä periaatteitamme ovat: . Meistä ruuan kuuluu olla:.</p>
+</div>
+
+
+
 
 
 <div id="map">
@@ -69,6 +85,6 @@ h1, h2, h3, h4, h5, h6 {
   attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>'
   }).addTo(map);
   var marker = L.marker([60.4511, 22.2629]).addTo(map);
-</script>    
+</script>
 </div>
 </body>
