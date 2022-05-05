@@ -8,15 +8,21 @@
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
 <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
 <style>
+body {
+  background-image: url('https://cdn.vox-cdn.com/thumbor/y7MziRg3LVTg9HIq0xXr9LcduzY=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/19950667/Gary_He.jpg');
+
+}
+
 body {font-family: "Times New Roman", Georgia, Serif;}
 h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display";
   letter-spacing: 5px;
+  color: white
 }
 
 .osoite{
     left: 150px;
-    top: 200px;
+    top: 100px;
     position: absolute;
 
 }
@@ -25,18 +31,17 @@ h1, h2, h3, h4, h5, h6 {
 
 .tarina{
   left: 150px;
-  top: 500px;
+  top: 300px;
   position: absolute;
+  color: white
 }
 
 #map{
-    left: 700px;
-    top: 300px;
+    left: 600px;
+    top: 100px;
     position: relative;
-    width: 300px;
-    padding: 50px;
-    margin: 20px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
 }
 
 </style>
@@ -62,20 +67,15 @@ h1, h2, h3, h4, h5, h6 {
 
 
 <div class ="osoite">
-<h3>katuosoite</h3>
-<h3>postinumero</h3>
+<h3>Katuosoite</h3>
 <h3>Kaupunki</h3>
-<h3>puhelinnumero</h3>
+<h3>Postinumero</h3>
+<h3>Puhelinnumero</h3>
 </div>
-
 
 <div class = "tarina">
-<p> Olemme vuodesta xxxx toiminut perheyritys. <br>Meidän arvoihimme kuuluvat: <br>sekä periaatteitamme ovat: . Meistä ruuan kuuluu olla:.</p>
+<p> Olemme vuodesta xxxx toiminut perheyritys. <br>Meidän arvoihimme kuuluvat: <br>sekä periaatteitamme ovat: . Meistä ruoan kuuluu olla:.</p>
 </div>
-
-
-
-
 
 <div id="map">
   <script>
