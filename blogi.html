@@ -6,6 +6,7 @@
 <meta charset="UTF-8">
 
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="/styles/shared.css">
 <style>
 
 * {
@@ -15,11 +16,14 @@
 /* Add a gray background color with some padding */
 body {
   font-family: Arial;
-  padding: 20px;
   background-image: url('https://cdn.vox-cdn.com/thumbor/y7MziRg3LVTg9HIq0xXr9LcduzY=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/19950667/Gary_He.jpg');
-
+  font-family: "Times New Roman", Georgia, Serif;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
 /* Header/Blog Title */
 .header {
   padding: 25px;
@@ -76,19 +80,25 @@ body {
 </head>
 <body>
 
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
-    <a href="etusivu.html" class="w3-bar-item w3-button">Ravintola</a>
-    <div class="w3-right w3-hide-small">
-      <a href="etusivu.html" class="w3-bar-item w3-button">Etusivu</a>
-      <a href="menu.html" class="w3-bar-item w3-button">Menu</a>
-      <a href="varaukset.html" class="w3-bar-item w3-button">Varaukset</a>
-      <a href="yhteystiedot.html" class="w3-bar-item w3-button">Yhteystiedot</a>
-      <a href="sisäänkirjautuminen.html" class="w3-bar-item w3-button">Kirjaudu Sisään</a>
-	  <a href ="blogi.html" class="w3-bar-item w3-button">Blogi</a>
+  <header>
+    <div class="navbar-home">
+        <a href="/">
+            Ravintolan nimi
+            <img class="logo" src="/images/logo.png"/>
+        </a>
     </div>
-  </div>
-</div>
+    <div class="navbar-right">
+        <div class="navbar-menu">
+          <a href="/varaukset.html">Varaukset</a>
+          <a href="/yhteystiedot.html">Yhteystiedot</a>
+          <a href="/menu.html">Menu</a>
+          <a href="/blogi.html">Blogi</a>
+        </div>
+        <div class="navbar-login">
+            <a class="log-button" href="/login/">Kirjaudu sisään</a>
+        </div>
+    </div>
+</header>
 
 <div class="header">
   <h2>Ravintolan blogi</h2>

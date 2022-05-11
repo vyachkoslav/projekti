@@ -43,16 +43,13 @@ header .logo {
     vertical-align: middle;
 }
 header .navbar-right{
-    width: 500px;
     float: right;
     margin-right: 75px;
     transform: translateY(5px);
 }
 header .navbar-menu{
     font-size: 18px;
-}
-header .navbar-login{
-    float: right;
+    margin-right: 50px;
 }
 header .log-button{
     border: solid;

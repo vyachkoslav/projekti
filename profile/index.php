@@ -29,9 +29,10 @@
             </div>
             <div class="navbar-right">
                 <div class="navbar-menu">
-                    <a href="/varaukset/">Varaukset</a>
-                    <a href="/yhteystiedot/">Yhteystiedot</a>
-                    <a href="/menu/">Menu</a>
+                    <a href="/varaukset.html">Varaukset</a>
+                    <a href="/yhteystiedot.html">Yhteystiedot</a>
+                    <a href="/menu.html">Menu</a>
+                    <a href="/blogi.html">Blogi</a>
                 </div>
                 <div class="navbar-login">
                     <a class="log-button" href="/login/">Kirjaudu sisään</a>
