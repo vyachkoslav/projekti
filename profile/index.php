@@ -129,7 +129,7 @@
             <h2>
                 <?php
                     echo "Tervetuloa, " . $_SESSION['username'];
-                ?>. Työjärjestyksesi tälle viikolle.
+                ?>. Tämän viikon aikataulusi.
             </h2>
             <table>
                 <tr class="top left">
