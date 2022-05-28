@@ -33,7 +33,7 @@
                     <a href="/blogi.html">Blogi</a>
                 </div>
                 <div class="navbar-login">
-                    <a class="log-button" href="/login/">Kirjaudu sisään</a>
+                    <a class="log-button" href="/login/">Profiili</a>
                 </div>
             </div>
         </header>
