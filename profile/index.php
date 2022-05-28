@@ -10,8 +10,6 @@
         session_unset(); 
         header("location:/login/");
     }
-
-    echo $_SESSION['username'];
 ?>
 <!DOCTYPE html>
 <html>
@@ -39,5 +37,8 @@
                 </div>
             </div>
         </header>
+    <?php
+        echo "Tervetuloa " . $_SESSION['username'];
+    ?>
     </body>
 </html>

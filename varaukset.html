@@ -5,6 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="/styles/shared.css">
 <style>
 body {font-family: "Times New Roman", Georgia, Serif;}
 h1, h2, h3, h4, h5, h6 {
@@ -27,19 +28,25 @@ body {
 </head>
 <body>
 
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
-    <a href="etusivu.html" class="w3-bar-item w3-button">Ravintola</a>
-    <div class="w3-right w3-hide-small">
-      <a href="index.html" class="w3-bar-item w3-button">Etusivu</a>
-      <a href="blogi.html" class="w3-bar-item w3-button">Blogi</a>
-      <a href="menu.html" class="w3-bar-item w3-button">Menu</a>
-      <a href="varaukset.html" class="w3-bar-item w3-button">Varaukset</a>
-      <a href="yhteystiedot.html" class="w3-bar-item w3-button">Yhteystiedot</a>
-      <a href="sisäänkirjautuminen.html" class="w3-bar-item w3-button">Kirjaudu Sisään</a>
+  <header>
+    <div class="navbar-home">
+        <a href="/">
+            Ravintolan nimi
+            <img class="logo" src="/images/logo.png"/>
+        </a>
     </div>
-  </div>
-</div>
+    <div class="navbar-right">
+        <div class="navbar-menu">
+            <a href="/varaukset.html">Varaukset</a>
+            <a href="/yhteystiedot.html">Yhteystiedot</a>
+            <a href="/menu.html">Menu</a>
+            <a href="/blogi.html">Blogi</a>
+        </div>
+        <div class="navbar-login">
+            <a class="log-button" href="/login/">Kirjaudu sisään</a>
+        </div>
+    </div>
+</header>
 
   <div class="card">
     <p class="w3-text-white w3-large"><b>Varaus</b></p>
