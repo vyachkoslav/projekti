@@ -78,7 +78,6 @@
 
                         for(var i = 0; i < 3; ++i){
                             for(var j = 0; j < days.length; j++){
-                                console.log(j + offset % 4);
                                 if((j + offset) % 4 >= 2){
                                     continue;
                                 }
