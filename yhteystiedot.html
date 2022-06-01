@@ -15,7 +15,7 @@ body {
 }
 
 body {font-family: "Times New Roman", Georgia, Serif;}
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h4, h5, h6 {
   font-family: "Playfair Display";
   letter-spacing: 5px;
   color: black
@@ -23,9 +23,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .osoite{
     left: 150px;
-    top: 100px;
-    position: absolute;
+    top: 220px;
+    position: relative;
+    left: 21%;
+}
 
+
+h3{
+  color: brown;
 }
 
 #map{
@@ -41,6 +46,8 @@ h1, h2, h3, h4, h5, h6 {
    margin-left: 150px;
    width: 950px;
    text-align: center;
+   position: relative;
+   left: 30%;
 }
 
 </style>
@@ -66,11 +73,15 @@ h1, h2, h3, h4, h5, h6 {
     </div>
 </header>
 
-<div class ="card">
-<p class="w3-text-white w3-large"><b>Osoite</b></p>
+
+<div class="osoite">
+<h3>Osoite</h3>
 <h3>Yliopistonkatu 27</h3>
 <h3>Turku</h3>
 <h3>+358 465 260 164</h3>
+</div>
+
+<div class ="card">
 <div id="map">
   <script>
   var map = L.map('map').setView([60.4511, 22.2629], 14);
